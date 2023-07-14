@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>HTML Lesson</title>
+    <style>
+      label {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form>
+      <label for="email">Email</label>
+      <input type="email" name="email" required>
+
+      <label for="password">Password</label>
+      <input type="password" name="password" required>
+
+      <label for="text">Nome e Cognome</label>
+      <input type="text" name="text" required maxlength="20">
+
+      <label for="dateOfBirthday">Data di nascita</label>
+      <input type="date" name="dateOfBirthday" required>
+
+      <label for="numberTelephone">Numero di telefono</label>
+      <input id="number" name="numberTelephone" required maxlength="10">
+      
+
+      <label for="abbonamento">Scegli l'abbonamento iCloud</label>
+
+      <select name="abbonamento" id="abbonamento">
+      <option value="">Seleziona</option>
+      <option value="free">Piano gratuito 5GB 0€</option>
+      <option value="bronze">Piano bronzo 25GB 2.50€</option>
+      <option value="silver">Piano argento 50GB 4.00€</option>
+      <option value="gold">Piano oro 200GB 8.00€</option>
+      </select>
+
+      <label for="planePro">Piano Pro 1TB 15€</label>
+      <input type="checkbox" name="planePro">
+
+
+        <label for="form-cc">Credit card number</label>
+        <input id="number" name="cc" type="text" required maxlength="16"/>
+
+        <label for="form-cvc">CVC</label>
+        <input id="number" name="cvc" type="text" required maxlength="3"/>
+
+        <label for="form-exp">Expiration date</label>
+        <input id="form-exp" name="exp" type="date" required/>
+
+        <label for="form-address">Address</label>
+        <input type="text" id="form-address" name="address" required/>
+
+
+    </form>
+  </body>
+</html>
